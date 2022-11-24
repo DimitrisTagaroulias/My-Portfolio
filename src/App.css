@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --primary-white: #fff;
+  /* --primary-teal: rgb(75, 219, 255); */
+  --primary-teal: rgb(60, 184, 255);
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+/**** NAVBAR ****/
+
+.logo {
+  /* padding-left: 1.25rem; */
+  width: 16.25rem;
+}
+
+/**** MENU LINKS ****/
+nav a.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: var(--primary-white);
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+}
+
+/* FIXME */
+/* FIXME */
+/* There is no <a> with .active class*/
+/* FIXME */
+/* FIXME */
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-teal);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-teal);
+}
