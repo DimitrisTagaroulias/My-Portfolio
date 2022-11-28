@@ -43,13 +43,21 @@
   --primary-white: #fff;
   /* --primary-teal: rgb(75, 219, 255); */
   --primary-teal: rgb(60, 184, 255);
+  --primary-blue: rgb(0, 132, 209);
+  --primary-light-blue: rgb(0, 155, 245);
+  --primary-dark-blue: rgb(0, 101, 160);
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
 /**** NAVBAR ****/
+nav {
+  z-index: 1;
+}
 
 .logo {
   /* padding-left: 1.25rem; */
@@ -78,6 +86,17 @@ nav ul li {
   max-width: 17.25rem;
 }
 
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 10rem;
+    /* border: solid 1px red; */
+  }
+  .logo {
+    width: 10rem;
+    /* border: solid 1px red; */
+  }
+}
+
 /* FIXME */
 /* FIXME */
 /* There is no <a> with .active class*/
@@ -90,4 +109,93 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-teal);
+}
+
+/**** HEADER ****/
+
+.header-wraper {
+  position: relative;
+  background: url(images/background_1920-1280_fixed_strong_black.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-teal);
+  text-transform: uppercase;
+}
+
+/**** TYPED TEXT ****/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/**** HEADER MAIN OFFER BUTTON ****/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-dark-blue);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:link,
+.btn-main-offer:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-dark-blue);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-main-offer:active {
+  background-color: var(--primary-blue);
+  transition: 0.05s ease-in-out;
+}
+
+/**** PARTICLES JS ****/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
