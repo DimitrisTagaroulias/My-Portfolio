@@ -5,14 +5,15 @@ import { loadFull } from "tsparticles";
 
 const ParticlesComponent = ({ className }) => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     // loadSlim(engine);
     await loadFull(engine);
     // loadFull(engine); // for this sample the slim version is enough, choose whatever you prefer, slim is smaller in size but doesn't have all the plugins and the mouse trail feature
   }, []);
 
+  //FIXME:
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
+    console.log("FIXME!");
   }, []);
 
   const options = useMemo(() => {
@@ -67,7 +68,7 @@ const ParticlesComponent = ({ className }) => {
             default: "bounce",
           },
           random: false,
-          speed: 2,
+          speed: 1.5,
           straight: false,
         },
         number: {
@@ -75,7 +76,7 @@ const ParticlesComponent = ({ className }) => {
             enable: true,
             area: 900,
           },
-          value: 40,
+          value: 20,
         },
         opacity: {
           value: 0.5,
