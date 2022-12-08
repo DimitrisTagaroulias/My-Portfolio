@@ -64,9 +64,6 @@ const Contacts = () => {
       <div className="container">
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
-            <button type="button" onClick={() => reset()}>
-              reset
-            </button>
             {/* left-inputs start */}
             <div className="col-md-6 col-sm-12">
               {/* */}

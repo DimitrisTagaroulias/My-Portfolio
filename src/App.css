@@ -57,10 +57,11 @@
   /* --primary-lighter-blue: rgb(60, 170, 255); */
   --primary-dark-blue: rgb(0, 101, 160);
   --primary-dark: rgb(52, 58, 64);
+  --primary-dark-boot5: #212529;
   --primary-black: #000000;
   --primary-black-lighter: rgb(19, 19, 19);
   --primary-black-dark: rgb(14, 14, 14); /*unsused*/
-  --primary-black-dark: rgb(8, 8, 8); /*unsused*/
+  --primary-black-darker: rgb(8, 8, 8); /*unsused*/
   --primary-transparent-black: rgba(0, 0, 0, 0.7); /*unsused*/
   /* --primary-light-dark: rgb(95, 99, 105); */
   /* --primary-red: #ef4035; */
@@ -111,7 +112,7 @@ nav ul li {
 .navbar-nav > li > a {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  color: var(--primary-white);
+  color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
@@ -584,7 +585,8 @@ h3.popup-title,
   text-align: center;
   max-width: 53.125rem;
   margin: 0 auto 2rem auto;
-  background-color: var(--primary-black-lighter);
+  background-color: var(--primary-dark-boot5);
+  /* background-color: white; */
   border-radius: 10px;
 }
 
@@ -697,6 +699,7 @@ h3.popup-title,
 .success-message {
   font-weight: 900;
   color: var(--primary-success-green);
+  min-height: 1.5rem;
 }
 
 .error-message {
@@ -706,7 +709,7 @@ h3.popup-title,
 }
 
 .contacts .container {
-  padding: 4rem 0;
+  padding: 2.5rem 0 4rem 0;
 }
 
 .contacts input:focus,
@@ -762,4 +765,33 @@ textarea:focus + .line {
 }
 
 @media (max-width: 255px) {
+}
+
+/**** FOOTER ****/
+
+.footer {
+  position: relative;
+  padding: 3rem;
+  background: var(--primary-black-lighter);
+  color: var(--primary-dark-gray);
+  z-index: 2;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-gray);
+  user-select: none;
+}
+#phone-number {
+  user-select: unset;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
