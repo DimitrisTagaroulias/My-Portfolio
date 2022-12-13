@@ -519,6 +519,7 @@ h3.popup-title,
 .hyper-link {
   cursor: pointer;
   color: var(--primary-blue);
+  overflow: hidden;
   overflow-wrap: break-word;
 }
 
@@ -772,6 +773,7 @@ textarea:focus + .line {
 .footer {
   position: relative;
   padding: 3rem;
+  padding-bottom: 1.5rem;
   background: var(--primary-black-lighter);
   color: var(--primary-dark-gray);
   z-index: 2;
@@ -786,6 +788,11 @@ textarea:focus + .line {
   user-select: unset;
 }
 
+#footer-email {
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
 .footer a:hover {
   text-decoration: none;
   color: var(--primary-blue);
@@ -794,4 +801,89 @@ textarea:focus + .line {
 
 .footer p {
   margin-bottom: 0;
+}
+
+/*  */
+/*  */
+/*  */
+
+/* #personal-info {
+  border: 1px red solid;
+}
+
+#sitemap {
+  border: 1px red solid;
+}
+
+#media {
+  border: 1px red solid;
+}
+
+#copyright {
+  border: 1px red solid;
+} */
+
+/*  */
+/*  */
+/*  */
+
+/* @media (max-width: 380px) {
+  #sitemap {
+    text-align: center;
+  }
+} */
+
+@media (min-width: 380px) and (max-width: 575px) {
+  .site-map-column {
+    padding-top: 0.4rem;
+    width: auto !important;
+  }
+
+  .site-map-column:last-child {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #show-media::before {
+    content: "XSM";
+  }
+  .footer {
+    padding: 3rem 2rem 1.5rem;
+    /* padding-bottom: 1.5rem; */
+  }
+}
+
+@media (min-width: 576px) {
+  #show-media::before {
+    content: "SM";
+  }
+}
+
+@media (min-width: 768px) {
+  #show-media::before {
+    content: "MD";
+  }
+}
+
+@media (min-width: 992px) {
+  #show-media::before {
+    content: "LG";
+  }
+}
+
+@media (min-width: 1200px) {
+  #show-media::before {
+    content: "XL";
+  }
+}
+
+@media (min-width: 1400px) {
+  #show-media::before {
+    content: "XXL";
+  }
+}
+
+.col {
+  color: white !important;
 }
