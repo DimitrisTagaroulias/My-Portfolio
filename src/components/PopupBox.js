@@ -26,7 +26,7 @@ const PopupBox = (props) => {
         <div className="popup-surrounding" onClick={setStateToFalse}>
           <div
             id={id}
-            className="popup-container"
+            className="popup-container "
             onClick={(e) => e.stopPropagation()}
           >
             <div className="title-container d-flex justify-content-between">
@@ -35,20 +35,26 @@ const PopupBox = (props) => {
                 &#x2715;
               </div>
             </div>
-            <img
-              className="portfolio-image-popupbox"
-              src={imageUrl}
-              alt={imageAlt}
-            />
-            <p>{article}</p>
-            <div className="popup-footer">
-              <b>Github:</b>
-              <a
-                className="hyper-link"
-                onClick={() => window.open({ gitHubUrl })}
-              >
-                {gitHubUrl}
-              </a>
+            <div className="pop-up-content-box">
+              <div className="img-and-par-container">
+                <div className="img-container">
+                  <img
+                    className="portfolio-image-popupbox"
+                    src={imageUrl}
+                    alt={imageAlt}
+                  />
+                </div>
+                <p className="pop-up-article">{article}</p>
+              </div>
+              <div className="popup-footer">
+                <b>Github:</b>
+                <a
+                  className="hyper-link"
+                  onClick={() => window.open({ gitHubUrl })}
+                >
+                  {gitHubUrl}
+                </a>
+              </div>
             </div>
           </div>
         </div>

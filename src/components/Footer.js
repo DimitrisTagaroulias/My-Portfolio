@@ -53,7 +53,7 @@ const Footer = () => {
                   <a className="footer-nav">Portfolio</a>
                 </div>
                 <div>
-                  <a className="footer-nav">Contacts</a>
+                  <a className="footer-nav">Contact</a>
                 </div>
               </div>
             </div>

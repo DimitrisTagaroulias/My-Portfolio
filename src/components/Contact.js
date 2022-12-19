@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
-const Contacts = () => {
+const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const serviceID = "portfolio_ID";
   const templateID = "Portfolio_ID";
@@ -52,7 +52,7 @@ const Contacts = () => {
   }, [formState, reset]);
 
   return (
-    <div className="contacts">
+    <div id="contact" className="contact">
       <div className="text-center">
         <h1>Contact me</h1>
         <p>
@@ -173,8 +173,8 @@ const Contacts = () => {
       {/* container End */}
       <div id="show-media"></div>
     </div>
-    //* contacts End
+    //* contact End
   );
 };
 
-export default Contacts;
+export default Contact;
