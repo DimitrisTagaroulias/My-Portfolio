@@ -30,7 +30,7 @@ nav ul li {
   max-width: 17.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .navbar-brand {
     width: 10rem;
     /* border: solid 1px red; */

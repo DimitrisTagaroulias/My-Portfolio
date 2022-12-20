@@ -34,7 +34,7 @@
   color: var(--primary-white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .main-info h1 {
     font-size: 1.7rem !important;
   }
