@@ -243,13 +243,11 @@ h3.popup-title,
   .popup-footer {
     padding-left: 2rem;
     padding-bottom: 1.5rem;
-    /* padding: 1.5rem 2rem; */
   }
 }
 
 @media (max-height: 413px) and (orientation: landscape) {
   .pop-up-content-box {
-    /* FIXME: */
     grid-template-columns: 0.8fr 2fr;
   }
 
@@ -340,8 +338,7 @@ h3.popup-title,
 
 @media (min-height: 414px) and (max-height: 630px) and (max-width: 630px) and (orientation: landscape) {
   .popup-container {
-    border: solid rgb(255, 145, 0) 2px;
-    min-width: 30rem;
+    min-width: 28rem;
   }
 
   .pop-up-content-box {
@@ -364,12 +361,6 @@ h3.popup-title,
   }
 }
 
-/*  */
-/*  */
-/* FIXME: */
-/*  */
-/*  */
-
 @media (max-height: 414px) and (max-width: 681px) and (orientation: landscape) {
   .popup-container {
     min-width: unset;
@@ -383,10 +374,6 @@ h3.popup-title,
     text-align: justify;
     padding-top: 0.8rem;
   }
-}
-
-.popup-footer {
-  /* border: solid rgb(255, 255, 255) 5px; */
 }
 
 @media (max-height: 414px) and (max-width: 581px) and (orientation: landscape) {
