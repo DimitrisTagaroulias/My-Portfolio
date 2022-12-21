@@ -41,12 +41,6 @@ nav ul li {
   }
 }
 
-/* FIXME */
-/* FIXME */
-/* There is no <a> with .active class*/
-/* FIXME */
-/* FIXME */
-.navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-teal);
 }
