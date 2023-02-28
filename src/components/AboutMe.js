@@ -11,7 +11,7 @@ const AboutMe = () => {
               <img className="profile-img" src={author} alt="author..."></img>
             </div>
           </div>
-          <div className="col-lg-6 col-xm-12">
+          <div className="about-me-container col-lg-6 col-xm-12">
             <h1 className="about-heading">about me</h1>
             <p>
               Hello! I am Dimitris.

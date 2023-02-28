@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import netflixIMG from "../images/portfolio_images/netflix.png";
-import portfolioIMG from "../images/portfolio_images/portfolio.png";
+import portfolioIMG from "../images/portfolio_images/portfolio.jpg";
 import cityGuideIMG from "../images/portfolio_images/city-guide-app.png";
 import taskManagerIMG from "../images/portfolio_images/task-manager.png";
 import PopupBox from "./PopupBox";
@@ -54,7 +54,7 @@ const Portfolio = () => {
     imageAlt: "Portfolio Project...",
     article:
       "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
+    gitHubUrl: "https://github.com/DimitrisTagaroulias/My-Portfolio",
     popupIsOpen: portfolioIsOpen,
     setStateToFalse() {
       setPortfolioIsOpen(false);
@@ -130,6 +130,7 @@ const Portfolio = () => {
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            <div className="project-title">Portfolio Project</div>
           </div>
 
           {/*  */}

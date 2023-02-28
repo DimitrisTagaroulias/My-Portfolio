@@ -11,12 +11,19 @@
 .portfolio-image {
   max-width: 15rem;
   border: 1px solid var(--primary-blue);
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 }
 
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.project-title {
+  margin-top: 0.2rem;
 }
 
 /**** OVERFLOW BOX ****/
@@ -26,7 +33,7 @@
   opacity: 0;
   background-color: var(--primary-black);
   width: 15rem;
-  height: 8rem;
+  height: 8.92rem;
   top: 0;
   border: 1px solid var(--primary-blue);
   cursor: pointer;
@@ -40,7 +47,8 @@
 .portfolio-icon {
   position: absolute;
   opacity: 1;
-  margin-top: 3.6rem;
+  /* margin-top: 3.6rem; */
+  top: 3.73rem;
   color: var(--primary-blue);
   font-size: 1.5rem;
 }
@@ -101,7 +109,7 @@ h3.popup-title,
 
 .portfolio-image-popupbox {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1.8rem 0.5rem;
 }
 
 .hyper-link {

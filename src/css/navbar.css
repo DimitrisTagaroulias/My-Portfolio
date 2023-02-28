@@ -23,7 +23,9 @@ nav ul li {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid transparent;
+  border-bottom: 0.1875rem solid transparent;
+  min-width: fit-content;
+  max-width: 97px;
 }
 
 .navbar-brand {
@@ -42,9 +44,9 @@ nav ul li {
 }
 
 .navbar-nav > li > a:focus {
-  border-top: 0.1875rem solid var(--primary-teal);
+  border-bottom: 0.1875rem solid var(--primary-teal);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-teal);
+  border-bottom: 0.1875rem solid var(--primary-teal);
 }

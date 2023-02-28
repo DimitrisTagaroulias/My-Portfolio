@@ -50,7 +50,7 @@
   border: 1px solid var(--primary-dark-blue);
   text-transform: uppercase;
   border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.625rem 0.75rem 0.625rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
 }

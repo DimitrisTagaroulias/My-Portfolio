@@ -1,5 +1,6 @@
 import "./css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 import Particles from "./components/Particles";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";

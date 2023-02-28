@@ -10,10 +10,8 @@ const ParticlesComponent = ({ className }) => {
     // loadFull(engine); // for this sample the slim version is enough, choose whatever you prefer, slim is smaller in size but doesn't have all the plugins and the mouse trail feature
   }, []);
 
-  //FIXME:
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-    console.log("FIXME!");
+    console.log(await container);
   }, []);
 
   const options = useMemo(() => {
@@ -53,7 +51,7 @@ const ParticlesComponent = ({ className }) => {
         },
         links: {
           color: "#ffffff",
-          distance: 130,
+          distance: 140,
           enable: true,
           opacity: 0.5,
           width: 1,
