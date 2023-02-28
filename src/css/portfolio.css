@@ -1,4 +1,7 @@
 /**** PORTFOLIO ****/
+.projects-wrapper {
+  border: 1px solid red;
+}
 
 .portfolio-wrapper {
   background-color: var(--primary-light-gray);

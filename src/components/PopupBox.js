@@ -2,7 +2,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 
 const PopupBox = (props) => {
-  const { projects, onClose } = props;
+  const { projects } = props;
   const [openedProject] = projects.filter((project) => {
     return project["popupIsOpen"] === true;
   });
@@ -21,6 +21,7 @@ const PopupBox = (props) => {
       gitHubUrl,
       setStateToFalse,
     } = openedProject;
+
     return createPortal(
       <>
         <div className="popup-surrounding" onClick={setStateToFalse}>
@@ -50,7 +51,7 @@ const PopupBox = (props) => {
                 <b>Github:</b>
                 <a
                   className="hyper-link"
-                  onClick={() => window.open({ gitHubUrl })}
+                  onClick={() => window.open(gitHubUrl)}
                 >
                   {gitHubUrl}
                 </a>

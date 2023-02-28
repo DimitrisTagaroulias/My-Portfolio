@@ -3,13 +3,12 @@ import netflixIMG from "../images/portfolio_images/netflix.png";
 import portfolioIMG from "../images/portfolio_images/portfolio.jpg";
 import cityGuideIMG from "../images/portfolio_images/city-guide-app.png";
 import taskManagerIMG from "../images/portfolio_images/task-manager.png";
-import PopupBox from "./PopupBox";
 
 // FONT AWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
-const Portfolio = () => {
+const Projects = () => {
   const [NetflixIsOpen, setNetflixIsOpen] = useState(false);
   const [cityGuideIsOpen, setCityGuideIsOpen] = useState(false);
   const [portfolioIsOpen, setPortfolioIsOpen] = useState(false);
@@ -47,11 +46,6 @@ const Portfolio = () => {
     },
   };
 
-  // FIXME: ta link den paizoun
-  // FIXME: ta link den paizoun
-  // FIXME: ta link den paizoun
-  // FIXME: ta link den paizoun
-
   const portfolioPRJ = {
     id: "Portfolio",
     title: "Portfolio Project",
@@ -85,15 +79,16 @@ const Portfolio = () => {
   /////////////////////////////////////////////////////////////////
 
   return (
-    <div id="portfolio" className="portfolio-wrapper">
-      <div className="container">
-        <h1 className="text-uppercase text-center py-5">Portfolio</h1>
-        <div className="projects-wrapper row justify-content-center">
+    <>
+      {() => {
+        let thisContent;
+        projects.forEach((project) => {
+          thisContent += `
           <div
-            id="netflix"
+            id=${project.id}
             className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
             onClick={(e) => {
-              return setNetflixIsOpen(true);
+              return ${setNetflixIsOpen(true)};
             }}
           >
             <img
@@ -104,60 +99,76 @@ const Portfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-
-          {/*  */}
-
-          <div
-            id="cityGuide"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={() => setCityGuideIsOpen(true)}
-          >
-            <img
-              className="portfolio-image col"
-              src={cityGuideIMG}
-              alt="City Guide Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
-
-          {/*   */}
-
-          <div
-            id="portfolio"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={() => setPortfolioIsOpen(true)}
-          >
-            <img
-              className="portfolio-image col"
-              src={portfolioIMG}
-              alt="Portfolio React and Material UI Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            <div className="project-title">Portfolio Project</div>
-          </div>
-
-          {/*  */}
-
-          <div
-            id="taskManager"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={() => setTaskManagerIsOpen(true)}
-          >
-            <img
-              className="portfolio-image col"
-              src={taskManagerIMG}
-              alt="Task Manager React and Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
-        </div>
+      `;
+          return thisContent;
+        });
+      }}
+      <div
+        id="netflix"
+        className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
+        onClick={(e) => {
+          return setNetflixIsOpen(true);
+        }}
+      >
+        <img
+          className="portfolio-image col"
+          src={netflixIMG}
+          alt="Netflix Clone Project..."
+        />
+        <div className="overflow"></div>
+        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
       </div>
-      <PopupBox projects={projects} />
-    </div>
+
+      {/*  */}
+
+      <div
+        id="cityGuide"
+        className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
+        onClick={() => setCityGuideIsOpen(true)}
+      >
+        <img
+          className="portfolio-image col"
+          src={cityGuideIMG}
+          alt="City Guide Project..."
+        />
+        <div className="overflow"></div>
+        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+      </div>
+
+      {/*   */}
+
+      <div
+        id="portfolio"
+        className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
+        onClick={() => setPortfolioIsOpen(true)}
+      >
+        <img
+          className="portfolio-image col"
+          src={portfolioIMG}
+          alt="Portfolio React and Material UI Project..."
+        />
+        <div className="overflow"></div>
+        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+        <div className="project-title">Portfolio Project</div>
+      </div>
+
+      {/*  */}
+
+      <div
+        id="taskManager"
+        className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
+        onClick={() => setTaskManagerIsOpen(true)}
+      >
+        <img
+          className="portfolio-image col"
+          src={taskManagerIMG}
+          alt="Task Manager React and Project..."
+        />
+        <div className="overflow"></div>
+        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+      </div>
+    </>
   );
 };
 
-export default Portfolio;
+export default Projects;
