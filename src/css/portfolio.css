@@ -1,7 +1,7 @@
 /**** PORTFOLIO ****/
-.projects-wrapper {
+/* .projects-wrapper {
   border: 1px solid red;
-}
+} */
 
 .portfolio-wrapper {
   background-color: var(--primary-light-gray);
@@ -115,6 +115,11 @@ h3.popup-title,
   padding: 1.8rem 0.5rem;
 }
 
+.github-url {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
 .hyper-link {
   cursor: pointer;
   color: var(--primary-blue);
@@ -159,10 +164,19 @@ h3.popup-title,
   .popup-footer {
     line-height: 1.2rem;
   }
+
+  .github-url {
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 341px) {
   .popup-container {
     width: 100%;
+  }
+  .github-url {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -285,6 +299,11 @@ h3.popup-title,
   }
   .popup-footer {
     padding: 0.5rem 1rem 0.5rem;
+  }
+
+  .github-url {
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
   }
 }
 

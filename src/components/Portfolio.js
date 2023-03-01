@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ProjectList from "./ProjectList";
 import netflixIMG from "../images/portfolio_images/netflix.png";
 import portfolioIMG from "../images/portfolio_images/portfolio.jpg";
 import cityGuideIMG from "../images/portfolio_images/city-guide-app.png";
@@ -10,77 +11,86 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Portfolio = () => {
-  const [NetflixIsOpen, setNetflixIsOpen] = useState(false);
-  const [cityGuideIsOpen, setCityGuideIsOpen] = useState(false);
-  const [portfolioIsOpen, setPortfolioIsOpen] = useState(false);
-  const [taskManagerIsOpen, setTaskManagerIsOpen] = useState(false);
+  const [projectList, setProjectList] = useState("");
 
-  /////////////////////////////////////////////////////////////////
+  // console.log(projectList);
 
-  // Projects
-  const netFlixPRJ = {
-    id: "Netflix",
-    title: "Netflix clone project",
-    imageUrl: netflixIMG,
-    imageAlt: "Netflix clone project...",
-    article:
-      "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
-    popupIsOpen: NetflixIsOpen,
+  // const [NetflixIsOpen, setNetflixIsOpen] = useState(false);
+  // const [CityGuideIsOpen, setCityGuideIsOpen] = useState(false);
+  // const [PortfolioIsOpen, setPortfolioIsOpen] = useState(false);
+  // const [TaskManagerIsOpen, setTaskManagerIsOpen] = useState(false);
 
-    setStateToFalse() {
-      setNetflixIsOpen(false);
-    },
-  };
+  // // Projects
+  // const netFlixPRJ = {
+  //   id: "Netflix",
+  //   title: "Netflix clone project",
+  //   imageUrl: netflixIMG,
+  //   imageAlt: "Netflix clone project...",
+  //   article:
+  //     "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+  //   gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
+  //   popupIsOpen() {
+  //     return eval(`${this.id}IsOpen`);
+  //   },
 
-  const cityGuidePRJ = {
-    id: "CityGuide",
-    title: "City Guide Project",
-    imageUrl: cityGuideIMG,
-    imageAlt: "City Guide Project...",
-    article:
-      "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
-    popupIsOpen: cityGuideIsOpen,
-    setStateToFalse() {
-      setCityGuideIsOpen(false);
-    },
-  };
+  //   setStateToFalse() {
+  //     const setPRJstateIsOpen = `set${this.id}IsOpen`;
+  //     eval(setPRJstateIsOpen)(false);
+  //   },
+  // };
 
-  // FIXME: ta link den paizoun
-  // FIXME: ta link den paizoun
-  // FIXME: ta link den paizoun
-  // FIXME: ta link den paizoun
+  // const cityGuidePRJ = {
+  //   id: "CityGuide",
+  //   title: "City Guide Project",
+  //   imageUrl: cityGuideIMG,
+  //   imageAlt: "City Guide Project...",
+  //   article:
+  //     "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+  //   gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
+  //   popupIsOpen() {
+  //     return eval(`${this.id}IsOpen`);
+  //   },
+  //   setStateToFalse() {
+  //     const setPRJstateIsOpen = `set${this.id}IsOpen`;
+  //     eval(setPRJstateIsOpen)(false);
+  //   },
+  // };
 
-  const portfolioPRJ = {
-    id: "Portfolio",
-    title: "Portfolio Project",
-    imageUrl: portfolioIMG,
-    imageAlt: "Portfolio Project...",
-    article:
-      "This is a project that showcases the user's portfolio. Tools: javaScript, React, Bootstrap",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/My-Portfolio",
-    popupIsOpen: portfolioIsOpen,
-    setStateToFalse() {
-      setPortfolioIsOpen(false);
-    },
-  };
+  // const portfolioPRJ = {
+  //   id: "Portfolio",
+  //   title: "Portfolio Project",
+  //   imageUrl: portfolioIMG,
+  //   imageAlt: "Portfolio Project...",
+  //   article:
+  //     "This is a project that showcases the user's portfolio. Tools: React, Bootstrap",
+  //   gitHubUrl: "https://github.com/DimitrisTagaroulias/My-Portfolio",
+  //   popupIsOpen() {
+  //     return eval(`${this.id}IsOpen`);
+  //   },
+  //   setStateToFalse() {
+  //     const setPRJstateIsOpen = `set${this.id}IsOpen`;
+  //     eval(setPRJstateIsOpen)(false);
+  //   },
+  // };
 
-  const taskManagerPRJ = {
-    id: "taskManager",
-    title: "Task Manager Project",
-    imageUrl: taskManagerIMG,
-    imageAlt: "Task Manager Project...",
-    article:
-      "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
-    popupIsOpen: taskManagerIsOpen,
-    setStateToFalse() {
-      setTaskManagerIsOpen(false);
-    },
-  };
+  // const taskManagerPRJ = {
+  //   id: "TaskManager",
+  //   title: "Task Manager Project",
+  //   imageUrl: taskManagerIMG,
+  //   imageAlt: "Task Manager Project...",
+  //   article:
+  //     "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+  //   gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
+  //   popupIsOpen() {
+  //     return eval(`${this.id}IsOpen`);
+  //   },
+  //   setStateToFalse() {
+  //     const setPRJstateIsOpen = `set${this.id}IsOpen`;
+  //     eval(setPRJstateIsOpen)(false);
+  //   },
+  // };
 
-  const projects = [netFlixPRJ, cityGuidePRJ, portfolioPRJ, taskManagerPRJ];
+  // const projects = [netFlixPRJ, cityGuidePRJ, portfolioPRJ, taskManagerPRJ];
 
   /////////////////////////////////////////////////////////////////
 
@@ -89,73 +99,14 @@ const Portfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">Portfolio</h1>
         <div className="projects-wrapper row justify-content-center">
-          <div
-            id="netflix"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={(e) => {
-              return setNetflixIsOpen(true);
+          <ProjectList
+            refreshProjectList={(projectList) => {
+              setProjectList(projectList);
             }}
-          >
-            <img
-              className="portfolio-image col"
-              src={netflixIMG}
-              alt="Netflix Clone Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
-
-          {/*  */}
-
-          <div
-            id="cityGuide"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={() => setCityGuideIsOpen(true)}
-          >
-            <img
-              className="portfolio-image col"
-              src={cityGuideIMG}
-              alt="City Guide Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
-
-          {/*   */}
-
-          <div
-            id="portfolio"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={() => setPortfolioIsOpen(true)}
-          >
-            <img
-              className="portfolio-image col"
-              src={portfolioIMG}
-              alt="Portfolio React and Material UI Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            <div className="project-title">Portfolio Project</div>
-          </div>
-
-          {/*  */}
-
-          <div
-            id="taskManager"
-            className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-            onClick={() => setTaskManagerIsOpen(true)}
-          >
-            <img
-              className="portfolio-image col"
-              src={taskManagerIMG}
-              alt="Task Manager React and Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
+          />
         </div>
       </div>
-      <PopupBox projects={projects} />
+      <PopupBox projects={projectList} />
     </div>
   );
 };

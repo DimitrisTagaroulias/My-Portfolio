@@ -3,8 +3,9 @@ import { createPortal } from "react-dom";
 
 const PopupBox = (props) => {
   const { projects } = props;
+  if (!projects) return;
   const [openedProject] = projects.filter((project) => {
-    return project["popupIsOpen"] === true;
+    return project.popupIsOpen() === true;
   });
 
   // All closed
@@ -18,13 +19,19 @@ const PopupBox = (props) => {
       imageUrl,
       imageAlt,
       article,
+      liveUrl,
       gitHubUrl,
-      setStateToFalse,
+      setProjectIsOpenTo,
     } = openedProject;
 
     return createPortal(
       <>
-        <div className="popup-surrounding" onClick={setStateToFalse}>
+        <div
+          className="popup-surrounding"
+          onClick={() => {
+            openedProject.setProjectIsOpenTo(false);
+          }}
+        >
           <div
             id={id}
             className="popup-container "
@@ -32,7 +39,12 @@ const PopupBox = (props) => {
           >
             <div className="title-container d-flex justify-content-between">
               <h3 className="popup-title">{title}</h3>
-              <div className="popup-close-btn " onClick={setStateToFalse}>
+              <div
+                className="popup-close-btn "
+                onClick={() => {
+                  openedProject.setProjectIsOpenTo(false);
+                }}
+              >
                 &#x2715;
               </div>
             </div>
@@ -48,13 +60,24 @@ const PopupBox = (props) => {
                 <p className="pop-up-article">{article}</p>
               </div>
               <div className="popup-footer">
-                <b>Github:</b>
-                <a
-                  className="hyper-link"
-                  onClick={() => window.open(gitHubUrl)}
-                >
-                  {gitHubUrl}
-                </a>
+                <div className="live-url">
+                  <b>Live: </b>
+                  <a
+                    className="hyper-link"
+                    onClick={() => window.open(gitHubUrl)}
+                  >
+                    {gitHubUrl}
+                  </a>
+                </div>
+                <div className="github-url">
+                  <b>Github: </b>
+                  <a
+                    className="hyper-link"
+                    onClick={() => window.open(gitHubUrl)}
+                  >
+                    {gitHubUrl}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
