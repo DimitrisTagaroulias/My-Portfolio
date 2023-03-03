@@ -3,9 +3,12 @@ nav {
   z-index: 2;
 }
 
+.navbar-brand {
+  width: 10rem;
+}
+
 .logo {
-  /* padding-left: 1.25rem; */
-  width: 16.25rem;
+  width: 10rem;
 }
 
 /**** MENU LINKS ****/
@@ -28,25 +31,39 @@ nav ul li {
   max-width: 97px;
 }
 
-.navbar-brand {
-  max-width: 17.25rem;
-}
-
-@media (max-width: 767.98px) {
-  .navbar-brand {
-    width: 10rem;
-    /* border: solid 1px red; */
-  }
-  .logo {
-    width: 10rem;
-    /* border: solid 1px red; */
-  }
-}
-
 .navbar-nav > li > a:focus {
   border-bottom: 0.1875rem solid var(--primary-teal);
 }
 
 .navbar-nav > li > a:hover {
   border-bottom: 0.1875rem solid var(--primary-teal);
+}
+
+/**** NAVBAR MEDIA ****/
+/* @media (max-width: 767.98px) {
+  .navbar-brand {
+    width: 10rem;
+  }
+  .logo {
+    width: 10rem;
+  }
+}
+
+@media (max-height: 380px) and (max-width: 767.98px) and (orientation: landscape) {
+  .navbar-brand {
+    width: 10rem;
+  }
+  .logo {
+    width: 10rem;
+  }
+} */
+
+@media (min-height: 380px) and (min-width: 767.98px) and (orientation: landscape) {
+  .logo {
+    width: 16.25rem;
+  }
+
+  .navbar-brand {
+    max-width: 17.25rem;
+  }
 }

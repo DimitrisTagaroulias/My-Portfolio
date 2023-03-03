@@ -1,7 +1,4 @@
 /**** PORTFOLIO ****/
-/* .projects-wrapper {
-  border: 1px solid red;
-} */
 
 .portfolio-wrapper {
   background-color: var(--primary-light-gray);
@@ -50,7 +47,6 @@
 .portfolio-icon {
   position: absolute;
   opacity: 1;
-  /* margin-top: 3.6rem; */
   top: 3.73rem;
   color: var(--primary-blue);
   font-size: 1.5rem;
@@ -93,10 +89,14 @@
 }
 
 h3.popup-title,
-.popup-container .popup-footer b {
+.popup-container {
   font-size: 1rem;
-  font-weight: 500 !important;
   letter-spacing: -0.02rem;
+}
+
+h3.popup-title,
+.popup-footer b {
+  font-weight: 500 !important;
 }
 
 .popup-close-btn {
@@ -112,12 +112,13 @@ h3.popup-title,
 
 .portfolio-image-popupbox {
   width: 100%;
-  padding: 1.8rem 0.5rem;
+  padding: 1.6rem 0.5rem 1rem;
 }
 
-.github-url {
-  margin-top: 0.3rem;
-  margin-bottom: 0.5rem;
+.popup-footer .section > *,
+.popup-footer .tools > * {
+  display: inline-block;
+  margin: 0;
 }
 
 .hyper-link {
@@ -157,7 +158,7 @@ h3.popup-title,
 }
 
 @media (max-width: 476px) {
-  .pop-up-article {
+  .pop-up-article-container {
     text-align: justify;
   }
 
@@ -165,26 +166,29 @@ h3.popup-title,
     line-height: 1.2rem;
   }
 
-  .github-url {
-    margin-top: 0.6rem;
-    margin-bottom: 0.5rem;
+  .popup-footer > div {
+    margin-bottom: 0.4rem;
   }
 }
 @media (max-width: 341px) {
   .popup-container {
     width: 100%;
   }
-  .github-url {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+  .popup-footer > div {
+    margin-bottom: 0.3rem;
   }
 }
 
 @media (max-width: 321px) {
-  .pop-up-article,
-  .popup-container .popup-footer b,
-  .popup-container .popup-footer a {
+  .pop-up-article-container,
+  .popup-footer b,
+  .popup-footer a,
+  .popup-footer p {
     font-size: 0.9rem;
+  }
+
+  .portfolio-image-popupbox {
+    padding-top: 1.3rem;
   }
 }
 
@@ -237,9 +241,10 @@ h3.popup-title,
   .img-container {
     grid-area: img;
   }
-  .pop-up-article {
+
+  .pop-up-article-container {
     grid-area: par;
-    padding: 2rem;
+    padding: 1.3rem 2rem 2rem;
     margin: 0;
   }
 
@@ -279,13 +284,20 @@ h3.popup-title,
   .img-container {
     align-self: center;
   }
-  .pop-up-article {
+  .pop-up-article-container {
     padding-top: 1.4rem;
     padding-bottom: 0.5rem;
   }
   .popup-footer {
     padding-top: 0.7rem;
     padding-bottom: 0.9rem;
+  }
+
+  .pop-up-article-container,
+  .popup-footer b,
+  .popup-footer a,
+  .popup-footer p {
+    font-size: 0.9rem;
   }
 }
 
@@ -294,16 +306,19 @@ h3.popup-title,
     grid-template-columns: 0.7fr 2fr;
   }
 
-  .pop-up-article {
+  .pop-up-article-container {
     padding: 1rem 1rem 0.5rem;
   }
   .popup-footer {
     padding: 0.5rem 1rem 0.5rem;
   }
 
-  .github-url {
-    margin-top: 0.1rem;
-    margin-bottom: 0.5rem;
+  .portfolio-image-popupbox {
+    padding: 1rem 0.5rem 1rem;
+  }
+
+  .popup-footer > div {
+    margin-bottom: -0.2rem;
   }
 }
 
@@ -322,7 +337,7 @@ h3.popup-title,
 }
 
 @media (max-height: 420px) and (max-width: 1377px) and (orientation: landscape) {
-  .pop-up-article {
+  .pop-up-article-container {
     padding-left: 1rem;
   }
 
@@ -344,8 +359,12 @@ h3.popup-title,
       "link link";
   }
 
-  .pop-up-article {
-    padding-top: 1.1rem;
+  .portfolio-image-popupbox {
+    padding-top: 1rem;
+  }
+
+  .pop-up-article-container {
+    padding-top: 0.7rem;
     padding-bottom: 1rem;
     padding-left: 1.5rem;
   }
@@ -384,7 +403,7 @@ h3.popup-title,
     width: 50%;
   }
 
-  .pop-up-article {
+  .pop-up-article-container {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
@@ -400,24 +419,26 @@ h3.popup-title,
     align-self: flex-start;
   }
 
-  .pop-up-article {
+  .pop-up-article-container {
     text-align: justify;
-    padding-top: 0.8rem;
+    padding-top: 0.7rem;
   }
 }
 
 @media (max-height: 414px) and (max-width: 581px) and (orientation: landscape) {
-  .pop-up-article,
-  .popup-container .popup-footer b,
-  .popup-container .popup-footer a {
+  .pop-up-article-container,
+  .popup-footer b,
+  .popup-footer a,
+  .popup-footer p {
     font-size: 0.9rem;
   }
 }
 
 @media (max-height: 319px) and (max-width: 581px) and (orientation: landscape) {
-  .pop-up-article,
-  .popup-container .popup-footer b,
-  .popup-container .popup-footer a {
+  .pop-up-article-container,
+  .popup-footer b,
+  .popup-footer a,
+  .popup-footer p {
     font-size: 0.8rem;
   }
 }

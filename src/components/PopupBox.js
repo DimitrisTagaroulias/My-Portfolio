@@ -19,10 +19,14 @@ const PopupBox = (props) => {
       imageUrl,
       imageAlt,
       article,
+      section,
+      tools,
       liveUrl,
       gitHubUrl,
       setProjectIsOpenTo,
     } = openedProject;
+
+    // setProjectIsOpenTo --> is beeing used as openedProject.setProjectIsOpenTo()
 
     return createPortal(
       <>
@@ -57,20 +61,31 @@ const PopupBox = (props) => {
                     alt={imageAlt}
                   />
                 </div>
-                <p className="pop-up-article">{article}</p>
+                <div className="pop-up-article-container">
+                  <b>Project</b>
+                  <p className="pop-up-article">{article}</p>
+                </div>
               </div>
               <div className="popup-footer">
+                <div className="section">
+                  <b>Section:&nbsp;</b>
+                  <p>{section}</p>
+                </div>
+                <div className="tools">
+                  <b>Tools:&nbsp;</b>
+                  <p>{tools}</p>
+                </div>
                 <div className="live-url">
-                  <b>Live: </b>
+                  <b>Live:&nbsp;</b>
                   <a
                     className="hyper-link"
-                    onClick={() => window.open(gitHubUrl)}
+                    onClick={() => window.open(liveUrl)}
                   >
-                    {gitHubUrl}
+                    {liveUrl}
                   </a>
                 </div>
                 <div className="github-url">
-                  <b>Github: </b>
+                  <b>Github:&nbsp;</b>
                   <a
                     className="hyper-link"
                     onClick={() => window.open(gitHubUrl)}
