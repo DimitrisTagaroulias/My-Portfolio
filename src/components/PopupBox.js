@@ -19,8 +19,8 @@ const PopupBox = (props) => {
       imageUrl,
       imageAlt,
       article,
-      section,
-      tools,
+      purpose,
+      technologies,
       liveUrl,
       gitHubUrl,
       setProjectIsOpenTo,
@@ -62,18 +62,18 @@ const PopupBox = (props) => {
                   />
                 </div>
                 <div className="pop-up-article-container">
-                  <b>Project</b>
+                  <b>Description:&nbsp;</b>
                   <p className="pop-up-article">{article}</p>
                 </div>
               </div>
               <div className="popup-footer">
-                <div className="section">
-                  <b>Section:&nbsp;</b>
-                  <p>{section}</p>
+                <div className="stack-orientation">
+                  <b>Purpose:&nbsp;</b>
+                  <p>{purpose}</p>
                 </div>
-                <div className="tools">
-                  <b>Tools:&nbsp;</b>
-                  <p>{tools}</p>
+                <div className="technologies">
+                  <b>Technologies:&nbsp;</b>
+                  <p>{technologies}</p>
                 </div>
                 <div className="live-url">
                   <b>Live:&nbsp;</b>

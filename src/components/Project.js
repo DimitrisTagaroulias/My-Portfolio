@@ -10,17 +10,21 @@ const Project = (props) => {
       <div
         id={project.id}
         className="portfolio-image-box d-flex justify-content-center col-md-5 col-sm-10"
-        onClick={(e) => {
-          return project.setProjectIsOpenTo(true);
-        }}
       >
         <img
           className="portfolio-image col"
           src={project.imageUrl}
           alt={project.imageAlt}
         />
-        <div className="overflow"></div>
-        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+        <div
+          className="overflow-and-icon-container"
+          onClick={(e) => {
+            return project.setProjectIsOpenTo(true);
+          }}
+        >
+          <div className="overflow"></div>
+          <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+        </div>
         <div className="project-title">{project.title}</div>
       </div>
     </>
