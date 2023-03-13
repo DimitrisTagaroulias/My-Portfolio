@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.dbdd1639.css",
+    "main.js": "/My-Portfolio/static/js/main.f368215e.js",
+    "static/js/787.071eb048.chunk.js": "/My-Portfolio/static/js/787.071eb048.chunk.js",
+    "static/media/hotels.jpg": "/My-Portfolio/static/media/hotels.8e75f67a6ca79d20e0ee.jpg",
+    "static/media/testimonials-bg.jpg": "/My-Portfolio/static/media/testimonials-bg.75612be74ca26cb2eee2.jpg",
+    "static/media/task-manager.png": "/My-Portfolio/static/media/task-manager.7cdcc29ec2944720c44f.png",
+    "static/media/background_1920-1280_fixed_strong_black.jpg": "/My-Portfolio/static/media/background_1920-1280_fixed_strong_black.67831c9c40eccfa7291b.jpg",
+    "static/media/registration_center_school_theme.jpg": "/My-Portfolio/static/media/registration_center_school_theme.fbd46d54d04caf6bb066.jpg",
+    "static/media/portfolio.jpg": "/My-Portfolio/static/media/portfolio.9665fa6d5ecbb61653f0.jpg",
+    "static/media/logo_H150.png": "/My-Portfolio/static/media/logo_H150.4a3897cb753fe076114e.png",
+    "static/media/Me_400px.jpg": "/My-Portfolio/static/media/Me_400px.656251f3faa711a641a5.jpg",
+    "static/media/avatar-4.png": "/My-Portfolio/static/media/avatar-4.f7fb7ed7493d87bbba75.png",
+    "static/media/avatar-3.png": "/My-Portfolio/static/media/avatar-3.d6c9b46f1e2a3bbfbefa.png",
+    "static/media/avatar-1.png": "/My-Portfolio/static/media/avatar-1.9277ecea7570a7cb523d.png",
+    "static/media/avatar-2.png": "/My-Portfolio/static/media/avatar-2.75d8f23ea5e97b4d897d.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.dbdd1639.css.map": "/My-Portfolio/static/css/main.dbdd1639.css.map",
+    "main.f368215e.js.map": "/My-Portfolio/static/js/main.f368215e.js.map",
+    "787.071eb048.chunk.js.map": "/My-Portfolio/static/js/787.071eb048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbdd1639.css",
+    "static/js/main.f368215e.js"
+  ]
+}
