@@ -48,7 +48,7 @@ const ProjectList = ({ refreshProjectList }) => {
     article: "This is a project that showcases the user's Portfolio.",
     purpose: "Front-End Practice",
     technologies: "HTML, CSS, Bootstrap, JavaScript, React",
-    liveUrl: "https:______________________.com",
+    liveUrl: "https://dimitristagaroulias.github.io/My-Portfolio",
     gitHubUrl: "https://github.com/DimitrisTagaroulias/My-Portfolio",
     popupIsOpen() {
       return eval(`${this.id}IsOpen`);
