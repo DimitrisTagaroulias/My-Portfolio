@@ -1,30 +1,33 @@
 import React, { useState, useEffect } from "react";
 import Project from "./Project";
 
+// PROTOTYPE for importing a Project
+
 import HotelsIMG from "../images/portfolio_images/hotels.jpg";
 import PortfolioIMG from "../images/portfolio_images/portfolio.jpg";
 import RegistrationCenterIMG from "../images/portfolio_images/registration_center_school_theme.jpg";
-import taskManagerIMG from "../images/portfolio_images/task-manager.png";
+import ChatCodeXIMG from "../images/portfolio_images/chat_CodeX.jpg";
+import CookingWithReactIMG from "../images/portfolio_images/cooking-with-react-2.jpg";
 
 const ProjectList = ({ refreshProjectList }) => {
   const [HotelsIsOpen, setHotelsIsOpen] = useState(false);
   const [RegistrationCenterIsOpen, setRegistrationCenterIsOpen] =
     useState(false);
   const [PortfolioIsOpen, setPortfolioIsOpen] = useState(false);
-  const [TaskManagerIsOpen, setTaskManagerIsOpen] = useState(false);
+  const [ChatCodeXIsOpen, setChatCodeXIsOpen] = useState(false);
+  const [CookingWithReactIsOpen, setCookingWithReactIsOpen] = useState(false);
 
-  // setHotelsIsOpen, setRegistrationCenterIsOpen, setPortfolioIsOpen, setTaskManagerIsOpen are beeing used as `set${this.id}IsOpen`
+  // setHotelsIsOpen, setRegistrationCenterIsOpen, setPortfolioIsOpen, setChatCodeXIsOpen are beeing used as `set${this.id}IsOpen`
 
-  // Projects ------------------------------------------------------
   // Projects ------------------------------------------------------
   // Projects ------------------------------------------------------
   // Projects ------------------------------------------------------
   // Projects ------------------------------------------------------
   const HotelsPRJ = {
     id: "Hotels",
-    title: "Hotels Project",
+    title: "Hotels",
     imageUrl: HotelsIMG,
-    imageAlt: "Hotels Project...",
+    imageAlt: "Hotels...",
     article:
       "This is a project that helps the user to find a hotel room and book it.",
     purpose: "Full-Stack Practice",
@@ -42,9 +45,9 @@ const ProjectList = ({ refreshProjectList }) => {
 
   const PortfolioPRJ = {
     id: "Portfolio",
-    title: "Portfolio Project",
+    title: "Portfolio",
     imageUrl: PortfolioIMG,
-    imageAlt: "Portfolio Project...",
+    imageAlt: "Portfolio...",
     article: "This is a project that showcases the user's Portfolio.",
     purpose: "Front-End Practice",
     technologies: "HTML, CSS, Bootstrap, JavaScript, React",
@@ -68,8 +71,8 @@ const ProjectList = ({ refreshProjectList }) => {
       "This is a project that the user can register a student to a specific school on the Registration Center and the after the registration this school receives a relevant message.",
     purpose: "Back-End Practice",
     technologies:
-      "HTML, CSS,JavaScript, NodeJS, ExpressJS, Socket.IO, MongoDB ",
-    liveUrl: "https://registration-center.vercel.app",
+      "HTML, CSS, JavaScript, NodeJS, ExpressJS, Socket.IO, MongoDB ",
+    liveUrl: "https://registration-center-dimitristagaroulias.vercel.app",
     gitHubUrl:
       "https://github.com/DimitrisTagaroulias/registration_center_STAGING",
     popupIsOpen() {
@@ -81,15 +84,37 @@ const ProjectList = ({ refreshProjectList }) => {
     },
   };
 
-  const taskManagerPRJ = {
-    id: "TaskManager",
-    title: "Task Manager Project",
-    imageUrl: taskManagerIMG,
-    imageAlt: "Task Manager Project...",
+  const ChatCodeXPRJ = {
+    id: "ChatCodeX",
+    title: "Chat CodeX",
+    imageUrl: ChatCodeXIMG,
+    imageAlt: "Chat CodeX...",
     article:
-      "Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
-    liveUrl: "",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/Hotels",
+      "This is a project that helps the user to chat with the powerful ChatGPT by OpenAI",
+    purpose: "Back-End Practice",
+    technologies: "HTML, CSS, JavaScript, NodeJS, ExpressJS, OpenAI API ",
+    liveUrl: "https://chat-code-x-dimitristagaroulias.vercel.app",
+    gitHubUrl: "https://github.com/DimitrisTagaroulias/Chat_CodeX_STAGING",
+    popupIsOpen() {
+      return eval(`${this.id}IsOpen`);
+    },
+    setProjectIsOpenTo(boolean) {
+      const setPRJstateIsOpen = `set${this.id}IsOpen`;
+      eval(setPRJstateIsOpen)(boolean);
+    },
+  };
+
+  const CookingWithReactPRJ = {
+    id: "CookingWithReact",
+    title: "Cooking with React",
+    imageUrl: CookingWithReactIMG,
+    imageAlt: "Cooking with React...",
+    article:
+      "This is a project that helps the user to edit recipes and add new ones in the list.",
+    purpose: "React Practice",
+    technologies: "HTML, CSS, JavaScript, React",
+    liveUrl: "https://cooking-with-react-dimitristagaroulias.vercel.app",
+    gitHubUrl: "https://github.com/DimitrisTagaroulias/Cooking_with_React",
     popupIsOpen() {
       return eval(`${this.id}IsOpen`);
     },
@@ -105,7 +130,8 @@ const ProjectList = ({ refreshProjectList }) => {
     HotelsPRJ,
     PortfolioPRJ,
     RegistrationCenterPRJ,
-    taskManagerPRJ,
+    ChatCodeXPRJ,
+    CookingWithReactPRJ,
   ];
 
   // Projects ------------------------------------------------------
@@ -120,7 +146,8 @@ const ProjectList = ({ refreshProjectList }) => {
     HotelsIsOpen,
     RegistrationCenterIsOpen,
     PortfolioIsOpen,
-    TaskManagerIsOpen,
+    ChatCodeXIsOpen,
+    CookingWithReactIsOpen,
   ]);
 
   // Projects ------------------------------------------------------

@@ -16,7 +16,7 @@
 
 .portfolio-image-box {
   position: relative;
-  margin: 1rem;
+  margin: 1rem 1rem 1.5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
