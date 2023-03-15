@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.bff34e67.css",
-    "main.js": "/My-Portfolio/static/js/main.67da15a1.js",
+    "main.js": "/My-Portfolio/static/js/main.5e9a7105.js",
     "static/js/787.071eb048.chunk.js": "/My-Portfolio/static/js/787.071eb048.chunk.js",
     "static/media/hotels.jpg": "/My-Portfolio/static/media/hotels.8e75f67a6ca79d20e0ee.jpg",
     "static/media/testimonials-bg.jpg": "/My-Portfolio/static/media/testimonials-bg.75612be74ca26cb2eee2.jpg",
     "static/media/background_1920-1280_fixed_strong_black.jpg": "/My-Portfolio/static/media/background_1920-1280_fixed_strong_black.67831c9c40eccfa7291b.jpg",
     "static/media/registration_center_school_theme.jpg": "/My-Portfolio/static/media/registration_center_school_theme.fbd46d54d04caf6bb066.jpg",
-    "static/media/cooking-with-react-2.jpg": "/My-Portfolio/static/media/cooking-with-react-2.8195f37fe4ffff01000f.jpg",
+    "static/media/crypto-dashboard.jpg": "/My-Portfolio/static/media/crypto-dashboard.6e66d99b9a792838ed15.jpg",
+    "static/media/cooking-with-react.jpg": "/My-Portfolio/static/media/cooking-with-react.cac526b308390fc6cca0.jpg",
     "static/media/portfolio.jpg": "/My-Portfolio/static/media/portfolio.9665fa6d5ecbb61653f0.jpg",
     "static/media/logo_H150.png": "/My-Portfolio/static/media/logo_H150.4a3897cb753fe076114e.png",
     "static/media/chat_CodeX.jpg": "/My-Portfolio/static/media/chat_CodeX.06f4bdfc0488b733d79b.jpg",
@@ -18,11 +19,11 @@
     "static/media/avatar-2.png": "/My-Portfolio/static/media/avatar-2.75d8f23ea5e97b4d897d.png",
     "index.html": "/My-Portfolio/index.html",
     "main.bff34e67.css.map": "/My-Portfolio/static/css/main.bff34e67.css.map",
-    "main.67da15a1.js.map": "/My-Portfolio/static/js/main.67da15a1.js.map",
+    "main.5e9a7105.js.map": "/My-Portfolio/static/js/main.5e9a7105.js.map",
     "787.071eb048.chunk.js.map": "/My-Portfolio/static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bff34e67.css",
-    "static/js/main.67da15a1.js"
+    "static/js/main.5e9a7105.js"
   ]
 }
