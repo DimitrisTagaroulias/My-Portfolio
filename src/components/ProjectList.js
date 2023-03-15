@@ -54,7 +54,7 @@ const ProjectList = ({ refreshProjectList }) => {
     purpose: "Front-End Practice",
     technologies: "HTML, CSS, Bootstrap, JavaScript, React",
     liveUrl: "https://dimitristagaroulias.github.io/My-Portfolio",
-    gitHubUrl: "https://github.com/DimitrisTagaroulias/My-Portfolio",
+    gitHubUrl: "https://github.com/DimitrisTagaroulias/My_Portfolio_STAGING",
     popupIsOpen() {
       return eval(`${this.id}IsOpen`);
     },
