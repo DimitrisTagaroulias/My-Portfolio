@@ -7,7 +7,8 @@ import HotelsIMG from "../images/portfolio_images/hotels.jpg";
 import PortfolioIMG from "../images/portfolio_images/portfolio.jpg";
 import RegistrationCenterIMG from "../images/portfolio_images/registration_center_school_theme.jpg";
 import ChatCodeXIMG from "../images/portfolio_images/chat_CodeX.jpg";
-import CookingWithReactIMG from "../images/portfolio_images/cooking-with-react-2.jpg";
+import CookingWithReactIMG from "../images/portfolio_images/cooking-with-react.jpg";
+import CryptoDashboardIMG from "../images/portfolio_images/crypto-dashboard.jpg";
 
 const ProjectList = ({ refreshProjectList }) => {
   const [HotelsIsOpen, setHotelsIsOpen] = useState(false);
@@ -16,6 +17,7 @@ const ProjectList = ({ refreshProjectList }) => {
   const [PortfolioIsOpen, setPortfolioIsOpen] = useState(false);
   const [ChatCodeXIsOpen, setChatCodeXIsOpen] = useState(false);
   const [CookingWithReactIsOpen, setCookingWithReactIsOpen] = useState(false);
+  const [CryptoDashboardIsOpen, setCryptoDashboardIsOpen] = useState(false);
 
   // setHotelsIsOpen, setRegistrationCenterIsOpen, setPortfolioIsOpen, setChatCodeXIsOpen are beeing used as `set${this.id}IsOpen`
 
@@ -124,6 +126,27 @@ const ProjectList = ({ refreshProjectList }) => {
     },
   };
 
+  const CryptoDashboardPRJ = {
+    id: "CryptoDashboard",
+    title: "Crypto Dashboard",
+    imageUrl: CryptoDashboardIMG,
+    imageAlt: "Crypto Dashboard...",
+    article:
+      "This is a project that helps the user to convert cryptocurrencies and get the latest cryptocurrency news.",
+    purpose: "React / APIs Practice",
+    technologies: "HTML, CSS, JavaScript, React, APIs",
+    liveUrl: "https://crypto-dashboard-live-dimitristagaroulias.vercel.app/",
+    gitHubUrl:
+      "https://github.com/DimitrisTagaroulias/Crypto_Dashboard_STAGING",
+    popupIsOpen() {
+      return eval(`${this.id}IsOpen`);
+    },
+    setProjectIsOpenTo(boolean) {
+      const setPRJstateIsOpen = `set${this.id}IsOpen`;
+      eval(setPRJstateIsOpen)(boolean);
+    },
+  };
+
   // ----------------------
 
   const projects = [
@@ -132,6 +155,7 @@ const ProjectList = ({ refreshProjectList }) => {
     RegistrationCenterPRJ,
     ChatCodeXPRJ,
     CookingWithReactPRJ,
+    CryptoDashboardPRJ,
   ];
 
   // Projects ------------------------------------------------------
@@ -148,6 +172,7 @@ const ProjectList = ({ refreshProjectList }) => {
     PortfolioIsOpen,
     ChatCodeXIsOpen,
     CookingWithReactIsOpen,
+    CryptoDashboardIsOpen,
   ]);
 
   // Projects ------------------------------------------------------
