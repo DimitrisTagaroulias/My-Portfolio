@@ -10,8 +10,10 @@ const Experience = () => {
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2022-2023</h3>
+            <h3>2021-2022</h3>
+            <h4>World Traveler e-services</h4>
             <p>
+              {" "}
               Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id
               imperdiet et, porttitor at sem. Sed porttitor lectus nibh. Donec
               rutrum congue leo eget malesuada. Donec rutrum congue leo eget

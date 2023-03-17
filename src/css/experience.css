@@ -1,6 +1,7 @@
 /**** EXPERIENCE ****/
 .experience {
   padding: 0.7rem;
+  display: none;
 }
 
 .experience-wrapper {

@@ -1,7 +1,7 @@
 /**** PORTFOLIO ****/
 
 .portfolio-wrapper {
-  background-color: var(--primary-light-gray);
+  background-color: white;
   padding: 3rem 0;
 }
 .portfolio-wrapper h1 {

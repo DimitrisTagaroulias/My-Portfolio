@@ -20,7 +20,7 @@ const AboutMe = () => {
               growing and evolving in my profession. I have recently completed
               an educational and training program on{" "}
               <b>Front-End Web Development</b> in{" "}
-              <b>Ethnikon and Kapodistriakon Panepistimio Athinon (E.K.P.A)</b>{" "}
+              <b>National and Kapodistrian University of Athens (E.K.P.A)</b>{" "}
               and been certified on <b>Full-Stack Web Development</b> in{" "}
               <b>CollegeLink</b>. Furthermore, I have studied a numerous online
               courses through Udemy and other similar platforms and{" "}
