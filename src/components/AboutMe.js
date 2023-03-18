@@ -14,18 +14,19 @@ const AboutMe = () => {
           <div className="about-me-container col-lg-6 col-xm-12">
             <h1 className="about-heading">about me</h1>
             <p>
-              I am a qualified, passionate and creative junior{" "}
-              <b>Front-End Web Developer</b>. Highly skilled in communication,
-              team player with an eye for detail and ambitious, eager to keep
-              growing and evolving in my profession. I have recently completed
-              an educational and training program on{" "}
-              <b>Front-End Web Development</b> in{" "}
+              Qualified, passionate and creative <b>Front-End Web Developer</b>.
+              Highly skilled in communication, team player with an eye for
+              detail and ambitious, eager to keep growing and evolving in my
+              profession. Certified on <b>Front-End Web Development</b> from{" "}
               <b>National and Kapodistrian University of Athens (E.K.P.A)</b>{" "}
-              and been certified on <b>Full-Stack Web Development</b> in{" "}
-              <b>CollegeLink</b>. Furthermore, I have studied a numerous online
-              courses through Udemy and other similar platforms and{" "}
-              <b>created my own projects</b> in order to practice and enrich my
-              portfolio.
+              and <b>Full-Stack Web Development</b> from <b>CollegeLink</b>. As
+              a Front-End Web Developer, I have honed my skills in{" "}
+              <b>HTML, CSS, JavaScript, jQuery and React</b> by building{" "}
+              <b>my own projects</b>, which are showcased on my{" "}
+              <b>portfolio website</b>.In addition to these front-end
+              technologies, I have experience with back-end technologies such as{" "}
+              <b>PHP, MySQL, and NodeJS</b>, as well as version control tools
+              like <b>Git</b>.
             </p>
           </div>
         </div>
