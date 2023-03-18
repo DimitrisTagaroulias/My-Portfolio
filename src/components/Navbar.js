@@ -41,7 +41,7 @@ const Navbar = () => {
                 services
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item experience-display-none">
               <Link to="experience" offset={-110} className="nav-link" href="#">
                 experience
               </Link>

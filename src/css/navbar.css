@@ -1,4 +1,5 @@
 /**** NAVBAR ****/
+
 nav {
   z-index: 2;
 }
@@ -39,24 +40,11 @@ nav ul li {
   border-bottom: 0.1875rem solid var(--primary-teal);
 }
 
-/**** NAVBAR MEDIA ****/
-/* @media (max-width: 767.98px) {
-  .navbar-brand {
-    width: 10rem;
-  }
-  .logo {
-    width: 10rem;
-  }
+.experience-display-none {
+  display: none;
 }
 
-@media (max-height: 380px) and (max-width: 767.98px) and (orientation: landscape) {
-  .navbar-brand {
-    width: 10rem;
-  }
-  .logo {
-    width: 10rem;
-  }
-} */
+/**** NAVBAR MEDIA ****/
 
 @media (min-height: 380px) and (min-width: 767.98px) and (orientation: landscape) {
   .logo {
